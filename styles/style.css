@@ -4,81 +4,81 @@
 /* 4 шаг: подключаем шрифты к странице */
 
 @font-face {
-  font-family: 'Playfair Display';
-  src: local('Playfair Display Bold'), local('PlayfairDisplay-Bold'),
-    url('../fonts/PlayfairDisplay-Bold.woff2') format('woff2');
-  font-weight: bold;
+  font-family: "Playfair Display";
+  src: local("Playfair Display Bold"), local("PlayfairDisplay-Bold"),
+    url("../fonts/PlayfairDisplay-Bold.woff2") format("woff2");
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Playfair Display';
-  src: local('Playfair Display Regular'), local('PlayfairDisplay-Regular'),
-    url('../fonts/PlayfairDisplay-Regular.woff2') format('woff2');
-  font-weight: normal;
+  font-family: "Playfair Display";
+  src: local("Playfair Display Regular"), local("PlayfairDisplay-Regular"),
+    url("../fonts/PlayfairDisplay-Regular.woff2") format("woff2");
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Roboto';
-  src: local('Roboto Bold'), local('Roboto-Bold'),
-    url('../fonts/Roboto-Bold.woff2') format('woff2');
-  font-weight: bold;
+  font-family: "Roboto";
+  src: local("Roboto Bold"), local("Roboto-Bold"),
+    url("../fonts/Roboto-Bold.woff2") format("woff2");
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Roboto';
-  src: local('Roboto Light'), local('Roboto-Light'),
-    url('../fonts/Roboto-Light.woff2') format('woff2');
+  font-family: "Roboto";
+  src: local("Roboto Light"), local("Roboto-Light"),
+    url("../fonts/Roboto-Light.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Roboto';
-  src: local('Roboto'), local('Roboto-Regular'),
-    url('../fonts/Roboto-Regular.woff2') format('woff2');
-  font-weight: normal;
+  font-family: "Roboto";
+  src: local("Roboto"), local("Roboto-Regular"),
+    url("../fonts/Roboto-Regular.woff2") format("woff2");
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Roboto';
-  src: local('Roboto Black'), local('Roboto-Black'),
-    url('../fonts/Roboto-Black.woff2') format('woff2');
+  font-family: "Roboto";
+  src: local("Roboto Black"), local("Roboto-Black"),
+    url("../fonts/Roboto-Black.woff2") format("woff2");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Roboto';
-  src: local('Roboto Italic'), local('Roboto-Italic'),
-    url('../fonts/Roboto-Italic.woff2') format('woff2');
-  font-weight: normal;
+  font-family: "Roboto";
+  src: local("Roboto Italic"), local("Roboto-Italic"),
+    url("../fonts/Roboto-Italic.woff2") format("woff2");
+  font-weight: 400;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Roboto';
-  src: local('Roboto Medium'), local('Roboto-Medium'),
-    url('../fonts/Roboto-Medium.woff2') format('woff2');
+  font-family: "Roboto";
+  src: local("Roboto Medium"), local("Roboto-Medium"),
+    url("../fonts/Roboto-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Roboto';
-  src: local('Roboto Thin'), local('Roboto-Thin'),
-    url('../fonts/Roboto-Thin.woff2') format('woff2');
+  font-family: "Roboto";
+  src: local("Roboto Thin"), local("Roboto-Thin"),
+    url("../fonts/Roboto-Thin.woff2") format("woff2");
   font-weight: 100;
   font-style: normal;
   font-display: swap;
@@ -88,11 +88,12 @@
 /* 6 шаг: прописываем базовые стили для страницы в целом и глобальные стили */
 
 body {
-  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 24px;
   color: #444240;
   background: #FFFFFF;
 }
@@ -113,7 +114,7 @@ ul {
 /* 7 шаг: добавляем стили общим элементам на странице (кнопкам, заголовкам) */
 
 .heading {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 32px;
   line-height: 43px;
   color: #1B1A17;
@@ -145,15 +146,17 @@ ul {
 
 /* promo */
 
+.promo {
+  font-family: "Playfair Display", serif;
+}
+
 .promo__title {
-  font-family: 'Playfair Display', serif;
   font-size: 45px;
   line-height: 60px;
   color: #1B1A17;
 }
 
 .promo__sub-title {
-  font-family: 'Playfair Display', serif;
   font-size: 30px;
   line-height: 40px;
   color: #1B1A17;
@@ -167,14 +170,12 @@ ul {
 }
 
 .promo__characteristics {
-  font-family: 'Playfair Display', serif;
   font-size: 16px;
   line-height: 22px;
   color: #1B1A17;
 }
 
 .promo__price {
-  font-family: 'Playfair Display', serif;
   font-size: 16px;
   line-height: 22px;
   color: #1B1A17;
@@ -195,8 +196,8 @@ ul {
 }
 
 .card__title {
-  font-family: 'Playfair Display', serif;
-  font-weight: bold;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
@@ -204,14 +205,14 @@ ul {
 }
 
 .card__price {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 12px;
   line-height: 16px;
   color: rgba(27, 26, 23, 0.82);
 }
 
 .card__link {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 16px;
   line-height: 21px;
   color: #1B1A17;
@@ -229,7 +230,7 @@ ul {
 
 .advantages__description {
   font-size: 16px;
-  line-height: 150%;
+  line-height: 24px;
   color: #444240;
 }
 
@@ -254,7 +255,7 @@ ul {
 }
 
 .page-footer__title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.07em;

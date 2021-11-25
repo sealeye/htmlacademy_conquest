@@ -1,0 +1,3 @@
+{
+  "extends": "lizzy/node_modules/stylelint-config-htmlacademy"
+}
